@@ -1,0 +1,8 @@
+
+
+body { padding: 0; margin: 0; font-family: 'Barlow Semi Condensed', 'Noto Sans KR', sans-serif; }
+
+header { background-color: #fff; }
+.logo { padding: 15px 0 0 20px; }
+
+.container { width: 100%; height: 100%; background-color: #f3f3f3; }
