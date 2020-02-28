@@ -8,7 +8,9 @@
 	<body>
 		<%@ include file="/WEB-INF/views/common/header.jsp" %>
 		<div class="container">
-			<h1>hi</h1>
+			<h1>Welcome to MS Company!!</h1>
+			<br>
+			<h1>MS Company에 오신걸 환영합니다!!</h1>
 		</div>
 	</body>
 
