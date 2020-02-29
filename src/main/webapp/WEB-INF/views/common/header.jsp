@@ -8,7 +8,8 @@
 
 	<ul class="gnb">
 		<li><a href="/">HOME</a></li>
-		<li><a href="/">DEV TEST</a></li>
+		<li><a href="/api">API</a></li>
+		<li><a href="/board">BOARD</a></li>
 	</ul>
 
 	<div class="gnbUser">

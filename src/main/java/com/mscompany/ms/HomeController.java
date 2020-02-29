@@ -32,10 +32,15 @@ public class HomeController {
 	public String test(Locale locale, Model model) {
 		return "test";
 	}
+
+	@RequestMapping(value = "/api", method = RequestMethod.GET)
+	public String api(Model modell) {
+		return "api/api";
+	}
 	
-	@RequestMapping(value = "/dashboard", method = RequestMethod.GET)
-	public String dashboard(Model modell) {
-		return "dashboard";
+	@RequestMapping(value = "/board", method = RequestMethod.GET)
+	public String board(Model modell) {
+		return "board/board";
 	}
 	
 }
