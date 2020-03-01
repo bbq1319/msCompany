@@ -8,7 +8,10 @@
 	<body>
 		<%@ include file="/WEB-INF/views/common/header.jsp" %>
 		<div class="container">
-		
+			<%@ include file="/WEB-INF/views/common/aside.jsp" %>
+			<h1>API 개발테스트 메뉴입니다.</h1>
+			<br>
+			<h3>MAP 진행중...</h3>
 		</div>
 	</body>
 

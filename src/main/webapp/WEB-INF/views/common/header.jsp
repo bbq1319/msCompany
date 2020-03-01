@@ -6,11 +6,14 @@
 		</a>
 	</div>
 
-	<ul class="gnb">
-		<li><a href="/">HOME</a></li>
-		<li><a href="/api">API</a></li>
-		<li><a href="/board">BOARD</a></li>
-	</ul>
+	<div class="gnb">
+		<ul>
+			<li><a href="/">HOME</a></li>
+			<li><a href="/api">API</a></li>
+			<li><a href="/board">BOARD</a></li>
+		</ul>
+	</div>
+	
 
 	<div class="gnbUser">
 		<a href="/"> <img class="logo" src="/img/logo.png">

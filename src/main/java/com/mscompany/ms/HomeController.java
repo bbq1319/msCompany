@@ -38,6 +38,11 @@ public class HomeController {
 		return "api/api";
 	}
 	
+	@RequestMapping(value = "/map", method = RequestMethod.GET)
+	public String map(Model modell) {
+		return "api/map";
+	}
+	
 	@RequestMapping(value = "/board", method = RequestMethod.GET)
 	public String board(Model modell) {
 		return "board/board";
