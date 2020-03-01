@@ -9,10 +9,6 @@ body {
 	font-family: 'Barlow Semi Condensed', 'Noto Sans KR', sans-serif;
 }
 
-@media screen and (min-width: 700px) {
-	
-}
-
 /* HEADER */
 header {
 	display: grid;
@@ -91,3 +87,53 @@ header::after {
 	font-weight: bold;
 }
 
+/* API */
+
+.map {
+	width: 500px;
+	height: 400px;
+}
+
+@media screen and (max-width: 720px) {
+	header {
+		display: grid;
+		/* grid-template-columns: repeat(3, 1fr); */
+		/* grid-template-columns: 1fr 4fr 1fr; */
+		justify-content: space-between;
+		align-items: center;
+		background-color: #fff;
+	}
+	
+	header::after {
+		clear: both;
+		border: 1px solid gray;
+	}
+	
+	.gnbLogo {
+		grid-column: 1/4;
+		justify-self: center;
+	}
+	
+	.gnb {
+		display: inline-block;
+		grid-column: 1/4;
+		border-bottom: 1px solid rgba(100,100,100,0.3);
+		overflow: hidden;
+		list-style: none;
+		font-size: 1em;
+		color: black;
+	}
+	
+	.gnbUser {
+		display: none;
+	}
+	
+	.aside {
+		display: none;
+	}
+	
+	.map {
+		width: 400px;
+		height: 200px;
+	}
+}

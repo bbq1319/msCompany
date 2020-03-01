@@ -9,7 +9,7 @@
 		<%@ include file="/WEB-INF/views/common/header.jsp" %>
 		<div class="container">
 			<%@ include file="/WEB-INF/views/common/aside.jsp" %>
-			<div id="map" style="width:500px;height:400px;"></div>
+			<div id="map" class="map"></div>
 		</div>
 	</body>
 	
