@@ -6,13 +6,14 @@
 		</a>
 	</div>
 
-	<div class="gnb">
+	<nav class="gnb">
 		<ul>
 			<li><a href="/">HOME</a></li>
 			<li><a href="/api">API</a></li>
 			<li><a href="/board">BOARD</a></li>
+			<li><a href="#">ABOUT US</a></li>
 		</ul>
-	</div>
+	</nav>
 	
 
 	<div class="gnbUser">

@@ -15,8 +15,11 @@ body {
 
 /* HEADER */
 header {
-	display: flex;
+	display: grid;
+	/* grid-template-columns: repeat(3, 1fr); */
+	grid-template-columns: 1fr 4fr 1fr;
 	justify-content: space-between;
+	align-items: center;
 	background-color: #fff;
 }
 
@@ -29,11 +32,12 @@ header::after {
 }
 
 .gnbLogo {
-	float: left;
+	justify-self: start;
 }
 
 .gnb {
 	display: inline-block;
+	justify-self: center;
 	overflow: hidden;
 	list-style: none;
 	font-size: 2em;
@@ -44,12 +48,11 @@ header::after {
 	display: flex;
 	float: left;
 	align-items: center;
-	height: 115px;
 	margin: 0 10px 0 10px
 }
 
 .gnbUser {
-	float: right;
+	justify-self: end;
 }
 
 /* CONTENT */
