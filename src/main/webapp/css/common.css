@@ -94,6 +94,25 @@ header::after {
 	height: 400px;
 }
 
+.temp {
+	position: relative;
+	overflow: hidden;
+}
+
+.address {
+	width: 500px;
+	margin: 30px 0;
+}
+
+.address li {
+	display: block;
+	padding: 3px;
+	border: 1px solid rgba(100,100,100,0.3);
+	list-style: none;
+	font-size: 1.2em;
+	cursor: pointer;
+}
+
 @media screen and (max-width: 720px) {
 	header {
 		display: grid;
