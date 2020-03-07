@@ -1,23 +1,52 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <header>
-	<div class="gnbLogo">
-		<a href="/"> <img class="logo" src="/img/logo.png">
-		</a>
+	<div>
+		<a href="/">MSC LOGO</a>
 	</div>
 
-	<nav class="gnb">
+	<div class="menubar">
 		<ul>
-			<li><a href="/">HOME</a></li>
-			<li><a href="/api">API</a></li>
-			<li><a href="/board">BOARD</a></li>
-			<li><a href="#">ABOUT US</a></li>
+			<li><a href="/">HOME</a>
+				<ul>
+					<li><a href="/map">MAP</a></li>
+					<li><a href="#">BLANK</a></li>
+					<li><a href="#">BLANK</a></li>
+					<li><a href="#">BLANK</a></li>
+					<li><a href="#">BLANK</a></li>
+				</ul>
+			</li>
+			<li><a href="/api">API</a>
+				<ul>
+					<li><a href="/map">MAP</a></li>
+					<li><a href="#">BLANK</a></li>
+					<li><a href="#">BLANK</a></li>
+					<li><a href="#">BLANK</a></li>
+					<li><a href="#">BLANK</a></li>
+				</ul>
+			</li>
+			<li><a href="/board">BOARD</a>
+				<ul>
+					<li><a href="/map">MAP</a></li>
+					<li><a href="#">BLANK</a></li>
+					<li><a href="#">BLANK</a></li>
+					<li><a href="#">BLANK</a></li>
+					<li><a href="#">BLANK</a></li>
+				</ul>
+			</li>
+			<li><a href="#">ABOUT US</a>
+				<ul>
+					<li><a href="/map">MAP</a></li>
+					<li><a href="#">BLANK</a></li>
+					<li><a href="#">BLANK</a></li>
+					<li><a href="#">BLANK</a></li>
+					<li><a href="#">BLANK</a></li>
+				</ul>
+			</li>
 		</ul>
-	</nav>
+	</div>
 	
-
-	<div class="gnbUser">
-		<a href="/"> <img class="logo" src="/img/logo.png">
-		</a>
+	<div class="menuUtil">
+		
 	</div>
 </header>
