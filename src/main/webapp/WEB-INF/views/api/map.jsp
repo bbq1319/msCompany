@@ -8,13 +8,14 @@
 	<body>
 		<%@ include file="/WEB-INF/views/common/header.jsp" %>
 		<div class="container">
-			<%@ include file="/WEB-INF/views/common/aside.jsp" %>
+			<%-- <%@ include file="/WEB-INF/views/common/aside.jsp" %> --%>
 			
 			<input id="address" type="text" value="경인로">
 			<input id="btnFind" type="button" value="주소찾기">
 			<div id="temp" class="temp"></div>
 			<div id="map" class="map"></div>
 		</div>
+		<%@ include file="/WEB-INF/views/common/footer.jsp" %>
 	</body>
 	
 	<script>
