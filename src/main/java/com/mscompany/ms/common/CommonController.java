@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.mscompany.ms.util.JsonMV;
+
 @Controller
 @SuppressWarnings("rawtypes")
 @RequestMapping(produces="application/json;charset=UTF-8")

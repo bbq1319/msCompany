@@ -12,13 +12,13 @@ public class ApiController {
 	@Autowired
 	private ApiService apiSvc;
 	
-	@RequestMapping(value = "/api", method = RequestMethod.GET)
-	public String api(Model modell) {
+	@RequestMapping("/api")
+	public String api(Model model) {
 		return "api/api";
 	}
 	
-	@RequestMapping(value = "/api/map", method = RequestMethod.GET)
-	public String map(Model modell) {
+	@RequestMapping("/api/map")
+	public String map(Model model) {
 		return "api/map";
 	}
 

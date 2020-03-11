@@ -5,7 +5,8 @@
 	
 	<select id="getSubMenu" parameterType="hashmap" resultType="hashmap">
 		/* getSubMenu */
-		select * from kmscompany.Menu;
+		SELECT * FROM menu 
+		WHERE groupName = #{groupName}
 	</select>
 	
 </mapper>

@@ -8,7 +8,7 @@
 	<body>
 		<%@ include file="/WEB-INF/views/common/header.jsp" %>
 		<div class="container">
-			board
+			shopping
 		</div>
 		<%@ include file="/WEB-INF/views/common/footer.jsp" %>
 	</body>

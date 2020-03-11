@@ -7,14 +7,6 @@
 
 	<div class="menubar">
 		<ul>
-			<li><a href="/">HOME</a>
-				<ul>
-					<li><a href="/api/map">MAP</a></li>
-					<li><a href="#">BLANK</a></li>
-					<li><a href="#">BLANK</a></li>
-					<li><a href="#">BLANK</a></li>
-					<li><a href="#">BLANK</a></li>
-				</ul></li>
 			<li><a href="/api">API</a>
 				<ul>
 					<li><a href="/api/map">MAP</a></li>
@@ -22,7 +14,8 @@
 					<li><a href="#">BLANK</a></li>
 					<li><a href="#">BLANK</a></li>
 					<li><a href="#">BLANK</a></li>
-				</ul></li>
+				</ul>
+			</li>
 			<li><a href="/board">BOARD</a>
 				<ul>
 					<li><a href="/api/map">MAP</a></li>
@@ -30,7 +23,8 @@
 					<li><a href="#">BLANK</a></li>
 					<li><a href="#">BLANK</a></li>
 					<li><a href="#">BLANK</a></li>
-				</ul></li>
+				</ul>
+			</li>
 			<li><a href="#">ABOUT US</a>
 				<ul>
 					<li><a href="/api/map">MAP</a></li>
@@ -38,7 +32,8 @@
 					<li><a href="#">BLANK</a></li>
 					<li><a href="#">BLANK</a></li>
 					<li><a href="#">BLANK</a></li>
-				</ul></li>
+				</ul>
+			</li>
 		</ul>
 	</div>
 
@@ -46,18 +41,11 @@
 </header>
 
 <section class="subMenu">
-	<a href="/api"> 
-		<img src="/img/icon/ic_manual.png"> 
-		<span>ABOUT API</span>
-	</a>
-	<a href="/api/map">
-		<img src="/img/icon/ic_map.png"> 
-		<span>MAP</span>
-	</a>
+	<div id="subMenu"></div>
 </section>
 
 <script>
-	document.addEventListener("DOMContentLoaded", () => {
+	window.onload = () => {
 		const pathName = getUrlLocation('pathname');
 		const subMenu = document.querySelector('.subMenu');
 		if(pathName === '/') {
@@ -67,17 +55,33 @@
 			const pageName = pathName.split('/')[2];
 			getMenuList(groupName, pageName);
 		}
-
-		
-	});
+	}
 
 	const getMenuList = async (groupName, pageName) => {
-	    const menuList = await ajaxCall('/getSubMenu');
-
-	    for(let i in menuList) {
-			
-		}
+		const data = {groupName};
+	    const menuList = await ajaxCall('/getSubMenu', data);
 	    
-		console.log(menuList);
+	    for(let i in menuList) {
+			const menu = menuList[i];
+			const subMenu = document.getElementById('subMenu');
+			const anchor = document.createElement('a');
+			anchor.href = menu['url'];
+			const img = document.createElement('img');
+			img.src = menu['icon'];
+			const span = document.createElement('span');
+			span.innerText = menu['name'].toUpperCase();
+			
+			if(!pageName && i === '0') {
+				console.log("ho");
+				span.style.color = '#000';
+			} else if(pageName === menu['name']) {
+				console.log("hi");
+				span.style.color = '#000';
+			}
+			
+			anchor.appendChild(img);
+			anchor.appendChild(span);
+			subMenu.appendChild(anchor);
+		}
 	}
 </script>

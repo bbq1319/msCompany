@@ -1,4 +1,4 @@
-package com.mscompany.ms.common;
+package com.mscompany.ms.util;
 
 import org.springframework.web.servlet.ModelAndView;
 
