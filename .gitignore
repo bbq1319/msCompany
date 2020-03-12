@@ -1,4 +1,10 @@
 *.project
 *.classpath
 *.settings
-*/target/*
+target/
+.classpath
+.classpath
+.settings/org.eclipse.wst.common.component
+target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+target/m2e-wtp/web-resources/META-INF/maven/com.mscompany/ms/pom.properties
+target/m2e-wtp/web-resources/META-INF/maven/com.mscompany/ms/pom.xml
